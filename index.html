@@ -70,6 +70,47 @@
             font-size: 0.9em;
             color: #666;
         }
+     }
+        .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .certificate img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .description h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .description p {
+    font-size: 14px;
+    color: #555;
+  }
         
     </style>
     </head>
@@ -106,23 +147,26 @@
                 </div>
 
                
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="./moynul.png"/>
-                        </g>
-                    </svg>
-                </div>
+               <div class="home__img">
+    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <mask id="mask0" mask-type="alpha">
+            <!-- Circular Mask -->
+            <circle cx="240" cy="233" r="150" />
+        </mask>
+        <g mask="url(#mask0)"> 
+            <!-- Circular Shape -->
+            <circle cx="240" cy="233" r="150" />
+            <image class="quertal-img" x="90" y="83" href="./moynul.png" width="300" height="300" />
+        </g>
+    </svg>
+</div>
+
+
             </section>
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
-                <h2 class="section-title">About Me</h2>
-
+                <h2 class="section-title">About Me</h2>`
 
             </section>
 
@@ -162,7 +206,9 @@
                     <th>Roll</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody
+        
+
                 <tr>
                     <td>SSC</td>
                     <td>Cumilla Board</td>
@@ -225,12 +271,48 @@
             </li>
             <li><strong>Reflection:</strong> Bridged academic knowledge with practical experience, enhancing my expertise in scientific documentation and library management.</li>
         </ul>
+<br>
+        <h2>6. Certifications</h2>
 
-        <h2>6. Certifications and Courses</h2>
-        <ul>
-            <li>Internship in scientific documentation and information management at BANSDOC</li>
-            <li>Workshops on KOHA automation software and database utilization</li>
-        </ul>
+ <h1 style="text-align: center; margin: 20px 0;">Certificate Gallery</h1>
+   <div class="gallery" style="display: flex; gap: 20px; justify-content: center; align-items: flex-start; padding: 20px; background-color: #f9f9f9;">
+  <!-- Certificate 1 -->
+  <div class="certificate" style="display: flex; flex-direction: column; align-items: center; width: 250px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); background-color: #fff; padding: 15px; text-align: center;">
+    <img src="c1.png" alt="Restart Yourself Certificate" style="max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+    <div class="description">
+      <h3 style="font-size: 18px; margin: 10px 0; color: #333;">Restart Yourself Workshop</h3>
+      <p style="font-size: 14px; color: #555;">A certificate of appreciation for participating in the Restart Yourself workshop.</p>
+    </div>
+  </div>
+
+  <!-- Certificate 2 -->
+  <div class="certificate" style="display: flex; flex-direction: column; align-items: center; width: 250px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); background-color: #fff; padding: 15px; text-align: center;">
+    <img src="c2.png" alt="Hult Prize Certificate" style="max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+    <div class="description">
+      <h3 style="font-size: 18px; margin: 10px 0; color: #333;">Hult Prize 2019</h3>
+      <p style="font-size: 14px; color: #555;">Recognition for participation in the 2019 Hult Prize OnCampus at NSTU.</p>
+    </div>
+  </div>
+
+  <!-- Certificate 3 -->
+  <div class="certificate" style="display: flex; flex-direction: column; align-items: center; width: 250px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); background-color: #fff; padding: 15px; text-align: center;">
+    <img src="c4.png" alt="BANSDOC Certificate" style="max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+    <div class="description">
+      <h3 style="font-size: 18px; margin: 10px 0; color: #333;">BANSDOC Training Completion</h3>
+      <p style="font-size: 14px; color: #555;">A certificate awarded for completing the course in Information Science & Library Management in September 2023.</p>
+    </div>
+  </div>
+
+  <!-- Certificate 4 -->
+  <div class="certificate" style="display: flex; flex-direction: column; align-items: center; width: 250px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); background-color: #fff; padding: 15px; text-align: center;">
+    <img src="c3.png" alt="Grameen Bank Scholarship Certificate" style="max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px;">
+    <div class="description">
+      <h3 style="font-size: 18px; margin: 10px 0; color: #333;">Grameen Bank Scholarship Certificate</h3>
+      <p style="font-size: 14px; color: #555;">A certificate awarded for Grameen Bank Scholarship Certificate</p>
+    </div>
+  </div>
+</div>
+
 
         <h2>7. Professional Experience</h2>
         <h3>Internship at BANSDOC</h3>
@@ -340,7 +422,6 @@
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Md. Moynul Hossen</p>
-            <p class="footer__title">ASH2324MSS103M</p>
             <div class="footer__social">
                 <a href="https://web.facebook.com/md.moynulhossen12" class="footer__icon"><i class='bx bxl-facebook' >Facebook</i></a>
                 <a href="wa.me/+880-1713871269" class="footer__icon"><i class='bx bxl-whatsapp' >Whatsapp</i></a>
